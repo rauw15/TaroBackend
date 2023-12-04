@@ -1,0 +1,99 @@
+///USUARIOS
+
+### Agregar usuario
+POST http://localhost:3000/usuarios/crear
+Content-Type: application/json
+
+{
+  "email": "nuevo@email.com",
+  "password": "contrasena123",
+  "nombre": "Juan rodrigo",
+  "apellido": "Perez"
+}
+
+### Obtener Usuario
+POST  http://localhost:3001/usuarios/obtener/mimia2@gmail.com
+
+### Obtener todos
+GET http://localhost:3001/usuarios/obtenerUsuarios
+
+### Actualizar Usuario
+PUT http://localhost:3000/usuarios/actualizar/ nuEVo@email.com
+Content-Type: application/json
+
+{
+  "nombre": "Juan   ",
+  "apellido": " Gómez ",
+  "password": "nuevaContraseña22222"
+}
+
+### Borrar Usuario
+DELETE http://localhost:3000/usuarios/borrar/ NUEvo@email.com
+
+
+
+
+///PRODUCTOS
+
+### Agregar Producto
+POST http://localhost:3000/productos/crear
+Content-Type: application/json
+
+{
+  "nombreProducto": "Shortt",
+  "talla": "grande",
+  "marca": "   Gabban  ",
+  "categoria": "Mujer", 
+  "cantidad":10   ,
+   "precio":   29.99
+}
+### Obtener Producto
+GET http://localhost:3001/productos/obtener/bufanda
+
+### Obtener todos
+GET http://localhost:3000/productos/obtenerProductos
+
+### Obtener categorias
+GET http://localhost:3000/productos/obtenerCategoria/mujer
+
+### Actualizar Producto
+PUT http://localhost:3000/productos/actualizar/PantAlon
+Content-Type: application/json
+
+{ 
+  "nombreProducto": "Pantalonnn",
+  "talla": "mediana",
+  "marca": "Nueva MarKa",
+  "categoria":"hombre",
+  "cantidad": 15,
+   "precio": 9.99
+}
+
+### Borrar Producto
+DELETE http://localhost:3000/productos/borrar/PantalOn
+
+
+
+
+
+
+
+/// Ventas
+
+### Agregar ventas
+POST http://localhost:3000/ventas/crear
+Content-Type: application/json
+
+{
+  "email": "  nuevo@email.com",
+  "nombreProducto": " bufanda"
+}
+
+### Obtener ventas
+GET http://localhost:3000/ventas/obtener/6553447b2219064ad463bf28
+
+### Obtener Todas
+GET http://localhost:3000/ventas/obtenertodas
+
+### Borrar venta
+DELETE http://localhost:3000/ventas/borrar/6553447b2219064ad463bf28

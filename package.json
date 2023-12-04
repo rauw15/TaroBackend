@@ -1,0 +1,36 @@
+{
+  "name": "apiropa",
+  "version": "1.0.0",
+  "description": "crud ropa",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cracklitosss/ApiRopa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cracklitosss/ApiRopa/issues"
+  },
+  "homepage": "https://github.com/Cracklitosss/ApiRopa#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cloudinary": "^1.41.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "http": "^0.0.1-security",
+    "js-cookie": "^3.0.5",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.0",
+    "multer": "^1.4.5-lts.1",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.1",
+    "react-modal": "^3.16.1",
+    "sanitize-html": "^2.11.0",
+    "socket.io": "^4.7.2"
+  }
+}
